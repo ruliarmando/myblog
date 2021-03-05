@@ -125,6 +125,6 @@ Jadi, saya menambahkan public property `$count` serta method `increment` pada ko
 
 Hasil akhir bisa anda lihat pada gif berikut
 
-![result](assets/counter.gif "Livewire in Action")
+![result](/assets/counter.gif "Livewire in Action")
 
 Magic!
