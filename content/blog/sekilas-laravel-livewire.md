@@ -19,9 +19,9 @@ So, untuk memulai menggunakan Livewire (pastikan sudah membuat project laravel s
 
 `composer require livewire/livewire`
 
-Includekan Javascript nya Livewire (`@livewireStyles` dan `@livewireScripts)` pada blade template (dalam contoh saya pada file welcome.blade.php)
+Includekan Javascript nya Livewire (`@livewireStyles` dan `@livewireScripts`) pada blade template (dalam contoh saya pada file `welcome.blade.php`)
 
-```php
+```phtml
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -52,17 +52,17 @@ Kemudian buat komponen livewire bernama counter:
 
 Setelah menjalankan perintah diatas, akan tersedia 2 file yaitu `app/Http/Livewire/Counter.php` dan `resources/views/livewire/counter.blade.php`
 
-Edit counter.blade.php sebagai berikut:
+Edit `counter.blade.php` sebagai berikut:
 
-```php
+```phtml
 <div>
     <h1>Counter</h1>
 </div>
 ```
 
-Lalu includekan komponen pada file welcome.blade.php
+Lalu includekan komponen pada file `welcome.blade.php`
 
-```php
+```phtml
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -91,7 +91,7 @@ Lalu includekan komponen pada file welcome.blade.php
 Hidupkan development server dan buka localhost, anda akan melihat halaman dengan tulisan "Counter". Agar lebih menarik kita tambahkan sedikit interaktifitas pada komponen Livewire sebagai berikut:
 
 ```php
-<?php //file: app/Http/Livewire/Counter.php
+<?php // app/Http/Livewire/Counter.php
 
 namespace App\Http\Livewire;
 
@@ -113,8 +113,8 @@ class Counter extends Component
 }
 ```
 
-```php
-<!-- file: resources/views/livewire/counter.blade.php -->
+```phtml
+<!-- resources/views/livewire/counter.blade.php -->
 <div>
     <button wire:click="increment">+</button>
     <h1>{{ $count }}</h1>
