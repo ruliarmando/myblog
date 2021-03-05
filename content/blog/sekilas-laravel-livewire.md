@@ -24,25 +24,25 @@ Includekan Javascript nya Livewire (`@livewireStyles` dan `@livewireScripts`) pa
 ```phtml
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Livewire</title>
+    <title>Livewire</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-        @livewireStyles
-    </head>
-    <body class="antialiased">
-        @livewireScripts
-    </body>
+    <style>
+        body {
+          font-family: 'Nunito', sans-serif;
+        }
+    </style>
+    @livewireStyles
+  </head>
+  <body class="antialiased">
+    @livewireScripts
+  </body>
 </html>
 ```
 
@@ -56,7 +56,7 @@ Edit `counter.blade.php` sebagai berikut:
 
 ```phtml
 <div>
-    <h1>Counter</h1>
+  <h1>Counter</h1>
 </div>
 ```
 
@@ -65,26 +65,26 @@ Lalu includekan komponen pada file `welcome.blade.php`
 ```phtml
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Livewire</title>
+    <title>Livewire</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-        @livewireStyles
-    </head>
-    <body class="antialiased">
-        <livewire:counter />
-        @livewireScripts
-    </body>
+    <style>
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+    </style>
+    @livewireStyles
+  </head>
+  <body class="antialiased">
+    <livewire:counter />
+    @livewireScripts
+  </body>
 </html>
 ```
 
@@ -99,25 +99,25 @@ use Livewire\Component;
 
 class Counter extends Component
 {
-    public $count = 0;
+  public $count = 0;
 
-    public function increment()
-    {
-        $this->count++;
-    }
+  public function increment()
+  {
+    $this->count++;
+  }
 
-    public function render()
-    {
-        return view('livewire.counter');
-    }
+  public function render()
+  {
+    return view('livewire.counter');
+  }
 }
 ```
 
 ```phtml
 <!-- resources/views/livewire/counter.blade.php -->
 <div>
-    <button wire:click="increment">+</button>
-    <h1>{{ $count }}</h1>
+  <button wire:click="increment">+</button>
+  <h1>{{ $count }}</h1>
 </div>
 ```
 
