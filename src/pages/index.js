@@ -30,13 +30,13 @@ class IndexPage extends React.Component {
         <p>You can find me on:</p>
         <ul>
           <li>
-            <a href="https://github.com/ruliarmando">Github</a>
+            <a href="https://github.com/ruliarmando" target="_blank" rel="noopener noreferrer">Github</a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/rully-ramanda/">Linkedin</a>
+            <a href="https://www.linkedin.com/in/rully-ramanda/" target="_blank" rel="noopener noreferrer">Linkedin</a>
           </li>
           <li>
-            <a href="https://twitter.com/ruli_armando">Twitter</a>
+            <a href="https://twitter.com/ruli_armando" target="_blank" rel="noopener noreferrer">Twitter</a>
           </li>
         </ul>
         <Link to="/blog/">
