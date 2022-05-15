@@ -15,5 +15,3 @@ Setelah menjalankan perintah diatas maka kita akan menemukan folder yang namanya
 `php artisan serve`
 
 Selamat ngoding!
-
-``
