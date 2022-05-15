@@ -31,7 +31,11 @@ class IndexPage extends React.Component {
         <ul>
           <li>
             <a href="https://github.com/ruliarmando">Github</a>
+          </li>
+          <li>
             <a href="https://www.linkedin.com/in/rully-ramanda/">Linkedin</a>
+          </li>
+          <li>
             <a href="https://twitter.com/ruli_armando">Twitter</a>
           </li>
         </ul>
